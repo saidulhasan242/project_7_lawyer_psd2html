@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700&display=swap');
+
+
+
+/*    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;*/
+
+
+
+/*
+===========================================
+Header Section
+=============================
+*/
+
+header{}
+header .row{
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{}
+header .logo h1{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{}
+nav ul{}
+nav ul.row{}
+nav ul li{
+    padding: 0 10px;
+}
+nav ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    display: block;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+nav ul li a:hover{
+    color: #f2612c;
+}
+
+
+
+
+/*
+===========================================
+Header Section
+=============================
+*/
+
+
+
+/*
+===========================================
+banner Section
+=============================
+*/
+
+.banner-section{
+    position: relative;
+    overflow: hidden;
+}
+.banner1{}
+.banner2{
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-content h1{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1 ;
+    font-family: 'Montserrat', sans-serif;
+}
+.click-down{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #fff;
+    animation-name: arrow-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes arrow-down{
+    0%{
+        bottom: 40px;
+    }
+    50%{
+        bottom: 15px;
+    }
+    100%{
+        bottom: 40px;
+    }
+}
+
+
+
+
+/*
+===========================================
+banner Section
+=============================
+*/
+
+/*
+===========================================
+who we are Section
+=============================
+*/
+
+.who-we-are{
+    padding: 100px 0;
+}
+.who-we-are .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.who-we-content{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+.who-we-content span{
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: #f15927;
+}
+.who-we-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: #28367d;
+    padding: 15px 0;
+}
+.who-we-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.who-we-image{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+.who-we-image img{}
+
+
+
+/*
+===========================================
+who we are Section
+=============================
+*/
+
+
+/*
+===========================================
+what we do Section
+=============================
+*/
+
+.whatwedo-section{
+    background-color: #f7f8f8;
+    background-image: url(../images/whatwe_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 80px 0 120px;
+}
+.whatwedo-section .row{}
+.what-we-content{}
+.what-we-content span{
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: #f15927;
+    margin: auto;
+}
+.what-we-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: #28367d;
+    padding: 15px 0;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.what-we-do{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 0px 10px;
+}
+.whatwedo-box{
+    position: relative;
+}
+.whatwedo-box img{
+    width: 100%;
+}
+.whatwedo-box .overlay{
+    width: 100%;
+    height: 40%;
+    transition : all 0.3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(30,87,153,0.7) 100%);
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(30,87,153,0.7) 100%);
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(30,87,153,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#b31e5799',GradientType=0 );
+}
+.whatwedo-box:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+.whatwedo-box h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 26px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.whatwedo-box:hover h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.right-arrow a{
+    color: #fff;
+    font-size: 30px;
+}
+.whatwedo-box .right-arrow{
+    position: absolute;
+    bottom: 25px;
+    left: 30%;
+    transform: translateX(-30%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.whatwedo-box:hover .right-arrow{
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+
+
+/*
+===========================================
+what we do Section
+=============================
+*/
+/*
+===========================================
+Our attorneys Section
+=============================
+*/
+
+.ourattorneys-section{
+    background-image: url(../images/our_att.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+}
+.ourattorneys-section .row{
+    justify-content: space-between;
+}
+.ouratt-content{
+    max-width: 25%;
+    flex-basis: 25%;
+    margin-top: 150px;
+}
+.ouratt-content span{
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: #f15927;
+}
+.ouratt-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+    padding: 15px 0;
+    line-height: 1;
+}
+.ouratt-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999;
+    padding-bottom: 25px;
+}
+.ouratt-content a{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s;
+
+}
+.ouratt-content a:hover{
+    color: #f15927;
+}
+
+
+.our-attorneys{
+    max-width: 65%;
+    flex-basis: 65%;
+}
+.our-attorney{}
+.individual-att{
+     position: relative;
+}
+.individual-att img{
+        margin-bottom: 30px;
+}
+.individual-att h1 a{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    bottom: 1px;
+    left: 10%;
+    opacity: 0;
+    transition: all 0.4s;
+
+}
+.individual-att:hover h1 a{
+    bottom: 20px;
+    opacity: 1;
+}
+.individual-att .overlay{
+    width: 100%;
+    height: 40%;
+    transition : all 0.3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(30,87,153,0.7) 100%);
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(30,87,153,0.7) 100%);
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(30,87,153,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#b31e5799',GradientType=0 );
+}
+.individual-att:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+/*
+===========================================
+Our attorneys Section
+=============================
+*/
+
+
+/*
+===========================================
+Language Section
+=============================
+*/
+
+.language-section{
+    padding: 100px 0px;
+}
+.lang-heading{}
+.lang-heading span{
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: #f15927;
+    margin: auto;
+}
+.lang-heading h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: #28367d;
+    padding: 15px 0;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.language{
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 0px 10px;
+}
+.language h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #28367d;
+    font-weight: 900;
+    padding-bottom: 15px;
+
+}
+.language p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999;
+    padding-bottom: 25px;
+}
+.language a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f15927;
+}
+
+/*
+===========================================
+Language Section
+=============================
+*/
+
+
+/*
+===========================================
+Contact Us Section
+=============================
+*/
+
+.contactus-section{
+    padding-top: 75px;
+    background-color: #28377e;
+}
+.contactus-section .row{
+    justify-content: center;
+}
+.contact-heading{
+    text-align: center;
+}
+.contact-heading span{
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: #f15927;
+    margin: auto;
+}
+.contact-heading h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+    padding: 15px 0px;
+    padding-bottom: 70px;
+}
+.contact-form{
+    max-width: 50%;
+    flex-basis: 50%;
+    text-align: center;
+}
+.contact-form form{
+    padding-bottom: 100px;
+}
+.contact-form form input, .contact-form form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border: 2px solid transparent;
+    background: transparent;
+    border-bottom: 2px solid #999;
+}
+.contact-form form input[type="submit"]{
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 85px;
+    border-bottom: 0;
+    border: 1px solid transparent;
+    background: #f15927;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.contact-form form input:focus, .contact-form form textarea:focus{
+    outline: none;
+    border: 1px solid #3f4d8e;
+}
+::placeholder{
+    color: #fff;
+}
+
+
+
+
+/*
+===========================================
+Contact Us Section
+=============================
+*/
+
+
+/*
+===========================================
+footer Section
+=============================
+*/
+
+.footer-section{
+    background-color: #0c1234;
+    padding: 30px 0px;
+}
+.footer-section .row{
+    justify-content: space-between;
+}
+.copyright{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+.copyright p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #616ca8;
+}
+.social{
+    max-width: 40%;
+    flex-basis: 40%;
+}
+.social ul{}
+.social ul.row{
+    justify-content: flex-end;
+}
+.social ul li{
+    margin-right: 25px;
+}
+.social ul li a{
+    color: #616ca8;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.social ul li a:hover{
+    color: #f15927;
+}
+
+
+
+
+
+/*
+===========================================
+footer Section
+=============================
+*/
+
+
