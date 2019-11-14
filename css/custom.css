@@ -484,7 +484,7 @@ Contact Us Section
     font-size: 14px;
     border: 2px solid transparent;
     background: transparent;
-    border-bottom: 2px solid #999;
+    border-bottom: 1px solid #999;
 }
 .contact-form form input[type="submit"]{
     width: auto;
